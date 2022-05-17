@@ -1,0 +1,49 @@
+#navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin: 24px;
+}
+
+#navbar-icon-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+%navbar-icon {
+    background-position: cover;
+    background-size: contain;
+    height: 32px;
+    width: 32px;
+    margin: 15px;
+}
+
+.linkedin {
+    @extend %navbar-icon;
+    background-image: url('../static/icons/LinkedIn.png');
+}
+.github {
+    @extend %navbar-icon;
+    background-image: url('../static/icons/GitHub.png');
+}
+.cv {
+    @extend %navbar-icon;
+    background-image: url('../static/icons/CV.svg');
+}
+
+.janco {
+    background-image: url('../static/icons/JanCo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    width: 128px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    %navbar-icon, .janco {
+        margin: 10px;
+    }
+}

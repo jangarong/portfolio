@@ -1,0 +1,113 @@
+@use 'base';
+
+@font-face {
+  font-family: 'Istok Web';
+  src: url('../static/fonts/IstokWeb-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Istok Web';
+  src: url('../static/fonts/IstokWeb-Bold.ttf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Istok Web;
+  background-color: base.$primary-color;
+  color: base.$text-color;
+}
+
+%header, #header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  @extend %header;
+  font-weight: bold;
+  margin: 10px;
+}
+
+h2 {
+  @extend %header;
+  font-weight: normal;
+  margin: 5px;
+}
+
+.title {
+  letter-spacing: 0.05em;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section, %section {
+  text-align: center;
+  margin-top: 125px;
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+
+.stripe {
+  background: linear-gradient(169.84deg, 
+    rgba(65, 65, 65, 0) 25.11%, 
+    base.$primary-secondary-shadow-color 25.11%, 
+    base.$secondary-color 33.54%, 
+    base.$secondary-color 79.4%, 
+    rgba(65, 65, 65, 0) 79.4%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 125%;
+}
+
+.section-stripe {
+  @extend %section;
+}
+
+@media screen and (min-width: 768px) {
+  .stripe {
+    height: 175%;
+  }
+  .section-stripe {
+    min-height: 175%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stripe {
+    height: 175%;
+  }
+  .section-stripe {
+    min-height: 175%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stripe {
+    height: 200%;
+  }
+  .section-stripe {
+    min-height: 200%;
+  }
+}
+

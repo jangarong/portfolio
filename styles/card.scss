@@ -1,0 +1,82 @@
+@use 'base';
+
+.card {
+    background-color: base.$card-color;
+    filter: drop-shadow(20px 20px 100px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    text-align: left;
+    width: 360px;
+    height: 460px;
+    margin: 50px;
+
+    .body {
+        position: relative;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 25%;
+    }
+
+    img {
+        border-radius: 16px 16px 0 0;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+    
+    a {
+        color: base.$text-color;
+    }
+    
+    a:hover {
+        color: base.$text-color;
+    }
+
+    .card-icon-menu {
+        padding: 20px 10px 0 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    %card-icon {
+        background-position: cover;
+        background-size: contain;
+        height: 32px;
+        width: 32px;
+        margin: 10px;
+    }
+
+    .download {
+        @extend %card-icon;
+        background-image: url('../static/icons/download.png');
+    }
+
+    .github {
+        @extend %card-icon;
+        background-image: url('../static/icons/GitHub.png');
+    }
+
+    .kaggle {
+        @extend %card-icon;
+        background-image: url('../static/icons/kaggle.png');
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 340px;
+        height: 460px;
+        margin: 20px;
+    }
+}
