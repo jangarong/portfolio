@@ -6,7 +6,7 @@ const Profile: NextComponentType = () => {
         <div className="section">
             <Image
                 id="profile-image"
-                src="/portrait.png"
+                src="/static/files/portrait.png"
                 width="200px"
                 height="200px"
             />

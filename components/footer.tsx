@@ -6,7 +6,7 @@ const Navbar: NextComponentType = () => {
         <div id="footer">
             Designed and developed by Jan Garong | 
             Published on May 2022 | {` `}
-            <Link href="https://github.com/jangarong/jangarong.github.io">
+            <Link href="https://github.com/jangarong/portfolio.git">
                 Source Code
             </Link>
         </div>
