@@ -2,19 +2,19 @@ import type { NextComponentType } from 'next'
 import ProjectCard from './projectCard'
 import { useEffect, useState } from 'react'
 
-const Projects: NextComponentType = () => {
+const Projects = ({ projects }: { projects: Project[] }) => {
 
-    const [projects, setProjects] = useState<Project[]>([])
+    // const [projects, setProjects] = useState<Project[]>([])
 
-    const fetchProjects = async () => {
-        // TODO: Add pagination if applicable
-        const data = await fetch('/api/projects/1')
-        setProjects(await data.json())
-    }
+    // const fetchProjects = async () => {
+    //     // TODO: Add pagination if applicable
+    //     const data = await fetch('/api/projects/1')
+    //     setProjects(await data.json())
+    // }
 
-    useEffect(() => {
-        fetchProjects()
-    }, [])
+    // useEffect(() => {
+    //     fetchProjects()
+    // }, [])
 
     return (
         <div>
@@ -27,6 +27,7 @@ const Projects: NextComponentType = () => {
                 <div id="projects">
                     {projects.map(project => (
                         <ProjectCard
+                            key={project.name}
                             project={project}
                         />
                     ))}

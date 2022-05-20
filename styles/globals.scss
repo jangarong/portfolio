@@ -1,15 +1,16 @@
 @use 'base';
+@use 'breakpoints';
 
 @font-face {
   font-family: 'Istok Web';
-  src: url('../static/fonts/IstokWeb-Regular.ttf');
+  src: url('../public/fonts/IstokWeb-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Istok Web';
-  src: url('../static/fonts/IstokWeb-Bold.ttf');
+  src: url('../public/fonts/IstokWeb-Bold.ttf');
   font-weight: bold;
   font-style: bold;
 }
@@ -84,7 +85,7 @@ h2 {
   @extend %section;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: breakpoints.$sm) {
   .stripe {
     height: 175%;
   }
@@ -93,16 +94,16 @@ h2 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: breakpoints.$sm) {
   .stripe {
-    height: 275%;
+    height: 300%;
   }
   .section-stripe {
-    min-height: 275%;
+    min-height: 300%;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: breakpoints.$xs) {
   .stripe {
     height: 300%;
   }

@@ -8,7 +8,7 @@ const Navbar: NextComponentType = () => {
                 <div className="janco"></div>
             </Link>
             <div id="navbar-icon-menu">
-                <Link href="/static/files/resume.pdf">
+                <Link href="/files/resume.pdf">
                     <div className="navbar-icon cv"></div>
                 </Link>
                 <Link href="https://github.com/jangarong">

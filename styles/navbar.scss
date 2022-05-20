@@ -1,3 +1,5 @@
+@use 'breakpoints';
+
 #navbar {
     display: flex;
     flex-wrap: nowrap;
@@ -21,19 +23,19 @@
 
 .linkedin {
     @extend %navbar-icon;
-    background-image: url('../static/icons/LinkedIn.png');
+    background-image: url('../public/icons/LinkedIn.png');
 }
 .github {
     @extend %navbar-icon;
-    background-image: url('../static/icons/GitHub.png');
+    background-image: url('../public/icons/GitHub.png');
 }
 .cv {
     @extend %navbar-icon;
-    background-image: url('../static/icons/CV.svg');
+    background-image: url('../public/icons/CV.svg');
 }
 
 .janco {
-    background-image: url('../static/icons/JanCo.svg');
+    background-image: url('../public/icons/JanCo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -42,7 +44,7 @@
     margin: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: breakpoints.$sm) {
     %navbar-icon, .janco {
         margin: 10px;
     }

@@ -1,4 +1,5 @@
 @use 'base';
+@use 'breakpoints';
 
 .card {
     background-color: base.$card-color;
@@ -58,22 +59,22 @@
 
     .download {
         @extend %card-icon;
-        background-image: url('../static/icons/download.png');
+        background-image: url('../public/icons/download.png');
     }
 
     .github {
         @extend %card-icon;
-        background-image: url('../static/icons/GitHub.png');
+        background-image: url('../public/icons/GitHub.png');
     }
 
     .kaggle {
         @extend %card-icon;
-        background-image: url('../static/icons/kaggle.png');
+        background-image: url('../public/icons/kaggle.png');
     }
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: breakpoints.$sm) {
     .card {
         width: 340px;
         height: 460px;
