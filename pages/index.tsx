@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
-import Organizations from '../components/organizations'
-import Profile from '../components/profile'
-import Projects from '../components/projects'
+import Organizations from '../components/Organizations'
+import Profile from '../components/Profile'
+import Projects from '../components/Projects'
 import { organizations, projects } from '../constants/'
 
 const Home: NextPage = () => {

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import styles from './index.module.scss';
 
 const Organizations = ({ organizations }: { organizations: Organization[] }) => {
 
@@ -13,7 +14,7 @@ const Organizations = ({ organizations }: { organizations: Organization[] }) => 
                         <img
                             src={org.imgUrl}
                             alt={org.name}
-                            className="logo"
+                            className={styles["logo"]}
                         />
                     </Link>
                 ))}

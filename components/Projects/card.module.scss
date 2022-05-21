@@ -1,5 +1,5 @@
-@use 'base';
-@use 'breakpoints';
+@use 'styles/base';
+@use 'styles/breakpoints';
 
 .card {
     background-color: base.$card-color;
@@ -61,17 +61,17 @@
 
     .download {
         @extend %card-icon;
-        background-image: url('../public/icons/download.png');
+        background-image: url('/icons/download.png');
     }
 
     .github {
         @extend %card-icon;
-        background-image: url('../public/icons/GitHub.png');
+        background-image: url('/icons/GitHub.png');
     }
 
     .kaggle {
         @extend %card-icon;
-        background-image: url('../public/icons/kaggle.png');
+        background-image: url('/icons/kaggle.png');
     }
     
 }

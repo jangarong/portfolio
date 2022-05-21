@@ -1,17 +1,4 @@
-@use 'breakpoints';
-
-#navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content:space-between;
-    margin: 24px;
-}
-
-#navbar-icon-menu {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-}
+@use 'styles/breakpoints';
 
 %navbar-icon {
     background-position: cover;
@@ -23,19 +10,19 @@
 
 .linkedin {
     @extend %navbar-icon;
-    background-image: url('../public/icons/LinkedIn.png');
+    background-image: url('/icons/LinkedIn.png');
 }
 .github {
     @extend %navbar-icon;
-    background-image: url('../public/icons/GitHub.png');
+    background-image: url('/icons/GitHub.png');
 }
 .cv {
     @extend %navbar-icon;
-    background-image: url('../public/icons/CV.svg');
+    background-image: url('/icons/CV.svg');
 }
 
 .janco {
-    background-image: url('../public/icons/JanCo.svg');
+    background-image: url('/icons/JanCo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

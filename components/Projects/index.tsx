@@ -1,20 +1,7 @@
-import type { NextComponentType } from 'next'
 import ProjectCard from './projectCard'
-import { useEffect, useState } from 'react'
+import styles from './index.module.scss'
 
 const Projects = ({ projects }: { projects: Project[] }) => {
-
-    // const [projects, setProjects] = useState<Project[]>([])
-
-    // const fetchProjects = async () => {
-    //     // TODO: Add pagination if applicable
-    //     const data = await fetch('/api/projects/1')
-    //     setProjects(await data.json())
-    // }
-
-    // useEffect(() => {
-    //     fetchProjects()
-    // }, [])
 
     return (
         <div>

@@ -1,15 +1,16 @@
 import Link from 'next/link'
+import styles from './card.module.scss'
 
 const ProjectCard = (props: { project: Project }) => {
     const project = props.project
 
     return (
-        <div className="card">
+        <div className={styles["card"]}>
             <img
                 src={project.imgUrl}
                 alt={project.imgUrl}
             />
-            <div className="body">
+            <div className={styles["body"]}>
                 <h1>
                     {project.name}
                 </h1>
@@ -17,20 +18,20 @@ const ProjectCard = (props: { project: Project }) => {
                     {project.description}
                 </p>
             </div>
-            <div className="card-icon-menu">
+            <div className={styles["card-icon-menu"]}>
                 {project.zipUrl ?
                     <Link href={project.zipUrl}>
-                        <div className="download" />
+                        <div className={styles["download"]} />
                     </Link>
                     : <div />}
                 {project.githubUrl ?
                     <Link href={project.githubUrl}>
-                        <div className="github" />
+                        <div className={styles["github"]} />
                     </Link>
                     : <div />}
                 {project.kaggleUrl ?
                     <Link href={project.kaggleUrl}>
-                        <div className="kaggle" />
+                        <div className={styles["kaggle"]} />
                     </Link>
                     : <div />}
             </div>
