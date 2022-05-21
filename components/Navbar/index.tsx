@@ -9,7 +9,7 @@ const Navbar: NextComponentType = () => {
                 <div className={styles["janco"]}></div>
             </Link>
             <div id="navbar-icon-menu">
-                <Link href="/files/resume.pdf">
+                <Link href="files/resume.pdf">
                     <div className={styles["cv"]}></div>
                 </Link>
                 <Link href="https://github.com/jangarong">

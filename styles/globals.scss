@@ -1,26 +1,13 @@
 @use 'base';
 @use 'breakpoints';
 
-@font-face {
-  font-family: 'Istok Web';
-  src: url('/fonts/IstokWeb-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Istok Web';
-  src: url('/fonts/IstokWeb-Bold.ttf');
-  font-weight: bold;
-  font-style: bold;
-}
-
 html, body {
   padding: 0;
   margin: 0;
-  font-family: Istok Web;
+  font: base.$font-stack;
   background-color: base.$primary-color;
   color: base.$text-color;
+  line-height: 1.5em;
 }
 
 %header, #header {
@@ -42,7 +29,7 @@ h2 {
 }
 
 .title {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.075em;
   font-size: 36px;
   margin-bottom: 40px;
   font-weight: bold;

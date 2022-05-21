@@ -5,7 +5,7 @@ const Profile: NextComponentType = () => {
         <div className="section">
             <img
                 id="profile-image"
-                src="/files/portrait.png"
+                src="files/portrait.png"
                 alt="portrait.png"
             />
             <h1>Jan Garong</h1>
