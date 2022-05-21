@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 const ProjectCard = (props: { project: Project }) => {
@@ -6,10 +5,9 @@ const ProjectCard = (props: { project: Project }) => {
 
     return (
         <div className="card">
-            <Image
+            <img
                 src={project.imgUrl}
-                width="400%"
-                height="250%"
+                alt={project.imgUrl}
             />
             <div className="body">
                 <h1>

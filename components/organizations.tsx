@@ -10,7 +10,6 @@ const Organizations = ({ organizations }: { organizations: Organization[] }) => 
             <div id="org-logos">
                 {organizations.map(org => (
                     <Link href={org.url} key={org.name}>
-                        {/* eslint-disable @next/next/no-img-element */}
                         <img
                             src={org.imgUrl}
                             alt={org.name}

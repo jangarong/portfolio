@@ -1,14 +1,12 @@
 import type { NextComponentType } from 'next'
-import Image from 'next/image'
 
 const Profile: NextComponentType = () => {
     return (
         <div className="section">
-            <Image
+            <img
                 id="profile-image"
                 src="/files/portrait.png"
-                width="200px"
-                height="200px"
+                alt="portrait.png"
             />
             <h1>Jan Garong</h1>
             <h2>Software Engineer</h2>
