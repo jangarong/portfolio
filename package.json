@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "start:static": "serve out",
-    "export": "next export",
+    "export": "next build && next export",
     "lint": "next lint"
   },
   "dependencies": {

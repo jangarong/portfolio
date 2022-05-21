@@ -1,5 +1,4 @@
 import ProjectCard from './projectCard'
-import styles from './index.module.scss'
 
 const Projects = ({ projects }: { projects: Project[] }) => {
 
